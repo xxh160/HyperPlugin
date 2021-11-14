@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>cn.edu.nju.HyperPlugin</id>
+    <name>HyperPlat</name>
+    <vendor email="" url="">NJU</vendor>
+
+    <description>智能合约平台插件. 查看智能合约 api, 一键打开 cello dashboard 进行插件部署.</description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <toolWindow id="HyperPlat" secondary="true" icon="AllIcons.General.Modified" anchor="right"
+                    factoryClass="cn.edu.nju.hyperplugin.HyperPlatFactory"/>
+    </extensions>
+
+</idea-plugin>
